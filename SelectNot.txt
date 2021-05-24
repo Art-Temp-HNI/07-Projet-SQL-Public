@@ -1,0 +1,16 @@
+SELECT COUNT(*) FROM notation;
+select n.score, s.firstname, s.name from notation as n, students as s where n.numstud = s.numstud;
+select m.wording, n.score, s.firstname, s.name from notation as n, students as s, matter as m, test as t where n.numstud = s.numstud and t.numtest = n.numtest and m.codemat = t.codemat;
+select score from notation where score >9;
+select s.firstname, s.name from students as s, notation as n where n.score = 20 and n.numstud = s.numstud;
+select s.firstname, s.name, avg(n.score) from students as s, notation as n where n.numstud = s.numstud group by s.firstname;
+select * from test where testdate like '2014-01%' or testdate like '2014-02%' or testdate like '2014-03%' or testdate like '2014-04%' or testdate like '2014-05%' or testdate like '2014-06%';
+select t.numtest, t.testdate, t.place, m.wording from test as t, matter as m where t.codemat = m.codemat;
+select s.firstname, s.name, avg(n.score) as moy from students as s, notation as n where n.numstud = s.numstud group by s.firstname ORDER BY moy DESC;
+select m.wording, avg(n.score) from notation as n, matter as m, test as t where n.numtest = t.numtest and t.codemat = m.codemat GROUP BY m.codemat having count(n.score) > 6;
+SELECT t.numtest, avg(n.score) from students as s, notation as n, test as t where n.numtest = t.numtest and n.numstud = s.numstud GROUP by n.numtest HAVING COUNT(n.numstud) < 6;
+
+
+
+
+

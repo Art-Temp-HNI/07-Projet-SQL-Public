@@ -1,0 +1,3 @@
+select wording, coef, coef/sum(coef) from matter;
+
+select sum(coef) from matter;

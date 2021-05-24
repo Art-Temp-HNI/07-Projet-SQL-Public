@@ -1,0 +1,35 @@
+CREATE DATABASE devoirsql;
+
+
+CREATE TABLE matter (
+ codemat char PRIMARY KEY,
+ wording char,
+ coef float
+);
+
+CREATE TABLE test (
+ numtest INTEGER PRIMARY KEY,
+ testdate DATE,
+ place char,
+ codemat char,
+ FOREIGN KEY (codemat) REFERENCES matter(codemat)
+);
+
+CREATE TABLE students (
+  numstud INTEGER PRIMARY KEY,
+  name char,
+  firstname char,
+  dateofbirth DATE,
+  street char,
+  postalcod char,
+  city char
+);
+
+CREATE TABLE notation (
+ numnot integer primary key,
+ score float,
+ numstud integer,
+ numtest integer,
+ FOREIGN KEY (numstud) REFERENCES students(numstud),
+ FOREIGN KEY (numtest) REFERENCES test(numtest)
+);

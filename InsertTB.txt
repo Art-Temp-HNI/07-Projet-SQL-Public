@@ -1,0 +1,55 @@
+INSERT INTO students VALUES (1, 'Bob', 'Jean', '2018-09-24', 'Rue Truc', '44000', 'Nantes');
+INSERT INTO students VALUES (2, 'Dupont', 'Dupont', '2017-08-25', 'Rue Machin', '44000', 'Nantes');
+INSERT INTO students VALUES (3, 'Durand', 'Durand', '2016-07-14', 'Rue Bidule', '44000', 'Nantes');
+INSERT INTO students VALUES (4, 'Martin', 'Martin', '2015-06-21', 'Rue Chose', '49000', 'Angers');
+INSERT INTO students VALUES (5, 'Schnee', 'Jacques', '2014-05-21', 'Avenue Truc', '01000', 'LLStylish');
+INSERT INTO students VALUES (6, 'Pin', 'Oz', '2013-04-14', 'Avenue Machin', '01000', 'LLStylish');
+INSERT INTO students VALUES (7, 'Enchant', 'Merlin', '2012-03-04', 'Avenue Chose', '01000', 'LLStylish');
+
+
+INSERT INTO matter VALUES ('Bio', 'Biology', 1);
+INSERT INTO matter VALUES ('Phy', 'Physics', 1.5);
+INSERT INTO matter VALUES ('Mat', 'Mathematics', 2);
+
+
+INSERT INTO test VALUES (1, '2014-01-01', 'Chapelle', 'Bio');
+INSERT INTO test VALUES (2, '2014-03-11', 'Chapelle', 'Bio');
+INSERT INTO test VALUES (3, '2014-05-21', 'Classe', 'Mat');
+INSERT INTO test VALUES (4, '2014-07-30', 'Classe', 'Mat');
+INSERT INTO test VALUES (5, '2014-08-30', 'Cours', 'Phy');
+
+
+INSERT INTO notation VALUES (1, 20, 1, 1);
+INSERT INTO notation VALUES (2, 20, 2, 1);
+INSERT INTO notation VALUES (3, 11, 3, 1);
+INSERT INTO notation VALUES (4, 10, 4, 1);
+INSERT INTO notation VALUES (5, 12, 5, 1);
+INSERT INTO notation VALUES (6, 10, 6, 1);
+
+INSERT INTO notation VALUES (7, 16, 1, 2);
+INSERT INTO notation VALUES (8, 15, 7, 2);
+INSERT INTO notation VALUES (9, 14, 3, 2);
+INSERT INTO notation VALUES (10, 12, 4, 2);
+INSERT INTO notation VALUES (11, 11, 5, 2);
+INSERT INTO notation VALUES (12, 12, 6, 2);
+
+INSERT INTO notation VALUES (13, 16, 7, 3);
+INSERT INTO notation VALUES (14, 15, 2, 3);
+INSERT INTO notation VALUES (15, 14, 3, 3);
+INSERT INTO notation VALUES (16, 12, 4, 3);
+INSERT INTO notation VALUES (17, 11, 5, 3);
+INSERT INTO notation VALUES (18, 12, 6, 3);
+
+INSERT INTO notation VALUES (19, 6, 1, 4);
+INSERT INTO notation VALUES (20, 9, 2, 4);
+INSERT INTO notation VALUES (21, 4, 7, 4);
+INSERT INTO notation VALUES (22, 2, 4, 4);
+INSERT INTO notation VALUES (23, 8, 5, 4);
+INSERT INTO notation VALUES (24, 2, 6, 4);
+
+INSERT INTO notation VALUES (25, 6, 1, 5);
+INSERT INTO notation VALUES (26, 5, 2, 5);
+INSERT INTO notation VALUES (27, 4, 3, 5);
+INSERT INTO notation VALUES (28, 2, 7, 5);
+INSERT INTO notation VALUES (29, 1, 5, 5);
+INSERT INTO notation VALUES (30, 2, 6, 5);
